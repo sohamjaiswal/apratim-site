@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    display: flex;
+    height: min-content;
+    justify-content: center;
+    .children {
+        width: 100%;
+    }
+
+    @media (orientation: landscape) and (max-width: 1920px) {
+        .children {
+            width: 85%;
+        }
+    }
+
+    @media (orientation: landscape) and (max-width: 800px) {
+        .children {
+            width: 97.5%;
+        }
+    }
+
+    @media (orientation: portrait) {
+        .children {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.main-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: max-content;
+}
+  
+  .heading {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.sponsors-masonry-grid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    margin-left: -30px;
+    width: auto;
+    
+    .sponsors-masonry-column { 
+        padding-left: 30px;/* gutter size */
+        background-clip: padding-box;
+    
+        .sponsorCard {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            align-items: center; 
+            gap: 2rem;
+            flex-direction: column;
+        
+            img {
+                max-width: 100%;
+                object-fit: cover;
+              }
+              margin-bottom: 3rem;
+            }
+        
+      }
+
+}
